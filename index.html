@@ -63,9 +63,7 @@
       <section class="hero">
         <div class="box-container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button" data-modal-open>
-            Заказать услугу
-          </button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--advantages-->
@@ -82,8 +80,7 @@
               </div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="item">
@@ -94,8 +91,7 @@
               </div>
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="item">
@@ -106,8 +102,7 @@
               </div>
               <h3 class="title">Планирование</h3>
               <p class="text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="item">
@@ -118,8 +113,7 @@
               </div>
               <h3 class="title">Современные технологии</h3>
               <p class="text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
@@ -132,12 +126,7 @@
           <ul class="work-list list">
             <li class="item">
               <a href="#">
-                <img
-                  src="./images/work/box1.jpg"
-                  alt="написание кода"
-                  width="370"
-                  height="294"
-                />
+                <img src="./images/work/box1.jpg" alt="написание кода" width="370" height="294" />
               </a>
               <div class="work-overlay">
                 <p>Десктопные приложения</p>
@@ -145,12 +134,7 @@
             </li>
             <li class="item">
               <a href="#">
-                <img
-                  src="./images/work/box2.jpg"
-                  alt="адаптация сайта"
-                  width="370"
-                  height="294"
-                />
+                <img src="./images/work/box2.jpg" alt="адаптация сайта" width="370" height="294" />
               </a>
               <div class="work-overlay">
                 <p>Мобильные приложения</p>
@@ -158,12 +142,7 @@
             </li>
             <li class="item">
               <a href="#">
-                <img
-                  src="./images/work/box3.jpg"
-                  alt="оформление сайта"
-                  width="370"
-                  height="294"
-                />
+                <img src="./images/work/box3.jpg" alt="оформление сайта" width="370" height="294" />
               </a>
               <div class="work-overlay">
                 <p>Дизайнерские решения</p>
@@ -407,11 +386,7 @@
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-box">
-          <a
-            class="logo logo-footer"
-            href="./index.html"
-            aria-label="логотип сайта"
-          >
+          <a class="logo logo-footer" href="./index.html" aria-label="логотип сайта">
             <span class="accent">Web</span>Studio
           </a>
           <address id="contacts">
@@ -422,9 +397,7 @@
                 >
               </li>
               <li class="item">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <li class="item">
                 <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -474,6 +447,55 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="user-form" autocomplete="off">
+          <div class="form-field">
+            <label class="user-label" for="user-name">Имя</label>
+            <div class="input-field">
+              <input class="user-input" type="text" id="user-name" />
+              <svg class="form-icon" width="12px" height="12px">
+                <use href="./images/sprite.svg#name"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="user-label" for="user-phone">Телефон</label>
+            <div class="input-field">
+              <input class="user-input" type="tel" id="user-phone" />
+              <svg class="form-icon" width="13px" height="13px">
+                <use href="./images/sprite.svg#telephone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="user-label" for="user-mail">Почта</label>
+            <div class="input-field">
+              <input class="user-input" type="email" id="user-mail" />
+              <svg class="form-icon" width="15px" height="12px">
+                <use href="./images/sprite.svg#modal-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="user-label" for="form-comment">Комментарий</label>
+            <textarea
+              class="form-comment"
+              name="comment"
+              id="form-comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input class="user-checkbox" type="checkbox" value="accept-policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="policy-link">Условия договора</a></label
+            >
+          </div>
+          <button class="submit-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
