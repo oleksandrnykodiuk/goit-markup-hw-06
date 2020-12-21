@@ -249,10 +249,18 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   text-decoration: none;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition: 250ms var(--timing-fn);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ffffff;
+  color: var(--acccent-color);
 }
 
 .backdrop {
@@ -531,6 +539,10 @@ img {
   margin-right: 70px;
 }
 
+.footer-box:nth-child(2) {
+  margin-right: 93px;
+}
+
 .footer-box .text {
   margin-bottom: 20px;
   font-weight: 700;
@@ -581,6 +593,62 @@ img {
 .contacts-list-footer .link:hover,
 .contacts-list-footer .link:focus {
   color: var(--acccent-color);
+}
+
+.subscription.footer-box {
+  width: 570px;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-field {
+  position: relative;
+}
+
+.subscription-label {
+  position: absolute;
+
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  color: rgba(255, 255, 255, 0.3);
+  transition: transform 250ms var(--timing-fn), color 00ms var(--timing-fn);
+}
+
+.subscription-input:focus + .subscription-label {
+  transform: translate(-60px, -8px);
+  color: #ffffff;
+}
+
+.subscription-input {
+  display: inline-block;
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: #ffffff;
+}
+
+.subscription-button.button {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 29px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.telegram-icon {
+  margin-left: 10px;
+  fill: currentColor;
 }
 
 /* Portfolio */
@@ -811,9 +879,10 @@ img {
 .user-input {
   width: 100%;
 
-  padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 42px;
+  padding-right: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--timing-fn);
@@ -842,12 +911,68 @@ img {
   height: 120px;
   padding: 12px 16px;
 
-  font-weight: normal;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   outline: none;
+  transition: 250ms var(--timing-fn);
 }
+
+.form-comment::placeholder {
+  transition: color 250ms var(--timing-fn);
+}
+
+.form-comment:focus::placeholder {
+  color: var(--acccent-color);
+}
+
+.user-policy {
+  display: block;
+  font-size: 14px;
+  line-height: 1.78;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+}
+
+.policy-link {
+  color: #2196f3;
+}
+
+.user-policy::before {
+  display: inline-flex;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: 250ms var(--timing-fn);
+}
+
+.user-checkbox:checked + .user-policy::before {
+  background-color: var(--acccent-color);
+  border-color: var(--acccent-color);
+  background-image: url('../images/modal/checkbox.svg');
+  background-repeat: no-repeat;
+}
+
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-fn);
+}
+
+.user-form .submit-button:hover,
+.user-form .submit-button:focus {
+  background-color: #188ce8;
+  color: #ffffff;
+}
+
+/* End backdrop */

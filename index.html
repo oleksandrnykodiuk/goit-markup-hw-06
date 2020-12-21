@@ -438,6 +438,21 @@
             </li>
           </ul>
         </div>
+        <div class="subscription footer-box">
+          <p class="text">Подпишитесь на рассылку</p>
+          <form class="subscription-form">
+            <div class="subscription-field">
+              <input class="subscription-input" name="email" id="subscription" placeholder="" />
+              <label class="subscription-label" for="subscription">Email</label>
+            </div>
+            <button class="subscription-button button" type="submit">
+              Подписаться
+              <svg class="telegram-icon" width="24" height="24">
+                <use href="./images/sprite.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -452,7 +467,7 @@
           <div class="form-field">
             <label class="user-label" for="user-name">Имя</label>
             <div class="input-field">
-              <input class="user-input" type="text" id="user-name" />
+              <input class="user-input" name="name" id="user-name" autocomplete="off" />
               <svg class="form-icon" width="12px" height="12px">
                 <use href="./images/sprite.svg#name"></use>
               </svg>
@@ -462,7 +477,7 @@
           <div class="form-field">
             <label class="user-label" for="user-phone">Телефон</label>
             <div class="input-field">
-              <input class="user-input" type="tel" id="user-phone" />
+              <input class="user-input" name="tel" id="user-phone" />
               <svg class="form-icon" width="13px" height="13px">
                 <use href="./images/sprite.svg#telephone"></use>
               </svg>
@@ -472,7 +487,7 @@
           <div class="form-field">
             <label class="user-label" for="user-mail">Почта</label>
             <div class="input-field">
-              <input class="user-input" type="email" id="user-mail" />
+              <input class="user-input" name="email" id="user-mail" />
               <svg class="form-icon" width="15px" height="12px">
                 <use href="./images/sprite.svg#modal-mail"></use>
               </svg>
@@ -487,14 +502,19 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-field">
-            <input class="user-checkbox" type="checkbox" value="accept-policy" id="policy" />
-            <label for="policy"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="policy-link">Условия договора</a></label
-            >
-          </div>
-          <button class="submit-button" type="submit">Отправить</button>
+
+          <input
+            class="user-checkbox visually-hidden"
+            type="checkbox"
+            value="accept-policy"
+            id="policy"
+          />
+          <label for="policy" class="user-policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="" class="policy-link">Условия договора</a>
+          </label>
+
+          <button class="submit-button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
